@@ -53,16 +53,12 @@ $ awk '{print toupper{$0}}' NAMAFILE
 ```
 # jalankan `cat /dev/random > rand.txt` di background
 cat /dev/random > rand.txt &
-
 # tampilkan daftar job
 jobs
-
 # kirim sinyal STOP ke job tersebut
 kill -STOP %1 atau kill -STOP 6873 
-
 # lanjutkan job tersebut di background
 kill -CONT %1 atau kill -CONT 6873
-
 # kirim sinyal TERM ke job tersebut
 kill -TERM %1 atau kill -TERM 6873
 ```
