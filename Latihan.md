@@ -93,9 +93,12 @@ $ rmdir -p dir/test/ [jika dir punya folder test dan test tidak punya file apa a
 $ cp -i Florigo3.jpeg DIR/ [ditanya dulu apakah mau overwrite?]
 $ mkdir NAMAFOLDER
 
-# chmod ln
-$ 
-$ 
+# chmod -rwxr–rw-
+$ chmod 746 file1.txt
+# ln hard link
+$ ln file1.txt hard_link1
+# ln soft link
+$ ln -s file1.txt symbolic_link1
  
 # locate find wc
 $ locate Florigo2.jpeg
